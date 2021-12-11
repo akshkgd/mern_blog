@@ -1,11 +1,10 @@
 {
-  "name": "blog-app-node",
+  "name": "blog-app",
   "version": "1.0.0",
-  "description": "A simple blog app using nodejs",
+  "description": "A simple blog application using NodeJS, ExpressJs and MongoDb",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "devStart": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "ashish",
   "license": "ISC",

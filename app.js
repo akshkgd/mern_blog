@@ -39,7 +39,6 @@ app.use(methodOverride("_method"));
 //-------------------------------------------
 
 //------------ROUTERS------------------------
-const commentRoutes = require("./routes/comments");
 const postRoutes = require("./routes/posts");
 const indexRoutes = require("./routes/index");
 const userRoutes = require("./routes/user");
@@ -68,7 +67,6 @@ app.use((req, res, next) => {
 
 app.use("/", indexRoutes);
 app.use("/posts", postRoutes);
-app.use("/posts/:id/comments", commentRoutes);
 app.use("/user", userRoutes);
 
 let port = process.env.PORT || 3000;
